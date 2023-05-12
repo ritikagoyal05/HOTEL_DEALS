@@ -149,3 +149,25 @@
   color: lightgray;
   cursor: pointer;
 }
+.additionalFeaturesBtn {
+  margin-top: 20px;
+  background-color: #e9c067;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.additionalFeaturesBtn:hover {
+  background-color: #d49f00;
+}
+
+
+
+
+
+
+

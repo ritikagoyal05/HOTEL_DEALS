@@ -128,6 +128,9 @@ const Hotel = () => {
               <div className="hotelDetailsTexts">
                 <h1 className="hotelTitle">{data.title}</h1>
                 <p className="hotelDesc">{data.desc}</p>
+                <button className="additionalFeaturesBtn" onClick={() => console.log("Additional features button clicked")}>
+                  Additional Features
+                </button>
               </div>
               <div className="hotelDetailsPrice">
                 <h1>Perfect for a {days}-night stay!</h1>
@@ -147,7 +150,7 @@ const Hotel = () => {
           <Footer />
         </div>
       )}
-      {openModal && <Reserve setOpen={setOpenModal} hotelId={id}/>}
+      {openModal && <Reserve setOpen={setOpenModal} hotelId={id} />}
     </div>
   );
 };
