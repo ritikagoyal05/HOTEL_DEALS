@@ -12,9 +12,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navContainer">
         <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
-          <span className="logo">lamabooking</span>
+          <span className="logo">InnFinder</span>
         </Link>
-        {user ? <>{user.username} <button onClick={()=>{dispatch({ type: "LOGOUT" });}}>Logout</button> </>  : (
+        {user ? <> Welcome {user.username} !!<button onClick={()=>{dispatch({ type: "LOGOUT" });}}>Logout</button> </>  : (
           <div className="navItems">
             <button onClick={()=>navigate("/register")} className="navButton">Register</button>
             <button onClick={()=>navigate("/login")} className="navButton">Login</button>

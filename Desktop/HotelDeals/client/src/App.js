@@ -21,6 +21,7 @@ function App() {
         <Route path="/hotel-properties" element={<HotelProperties/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<RegistrationForm/>}/>
+        
       </Routes>
     </BrowserRouter>
   );

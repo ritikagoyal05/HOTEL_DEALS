@@ -3,7 +3,7 @@ import "./featured.css";
 
 const Featured = () => {
   const { data, loading, error } = useFetch(
-    "/hotels/countByCity?cities=berlin,madrid,london"
+    "/hotels/countByCity?cities=Goa,Delhi,Hyderabad,Mumbai"
   );
 
   return (
@@ -14,7 +14,7 @@ const Featured = () => {
         <>
           <div className="featuredItem">
             <img
-              src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
+              src="https://curlytales.com/wp-content/uploads/2020/07/alexey-turenkov-bWJiSZjIgTM-unsplash.jpg"
               alt=""
               className="featuredImg"
             />
@@ -26,7 +26,7 @@ const Featured = () => {
 
           <div className="featuredItem">
             <img
-              src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o="
+              src="https://1.bp.blogspot.com/-egYAYG3T5Jo/VGLvxkOT08I/AAAAAAAABJ8/yhY4S2iCB6g/s1600/darjeeling3_2443248b.jpg"
               alt=""
               className="featuredImg"
             />
@@ -37,18 +37,18 @@ const Featured = () => {
           </div>
           <div className="featuredItem">
             <img
-              src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+              src="https://4.bp.blogspot.com/_R_B1luv2EgY/THsK-BCiOWI/AAAAAAAAAbo/WKwXTclC_BU/s1600/hyderabad.jpg"
               alt=""
               className="featuredImg"
             />
             <div className="featuredTitles">
-              <h1>Hyderbad</h1>
+              <h1>Hyderabad</h1>
               <h2>{data[2]} properties</h2>
             </div>
           </div>
           <div className="featuredItem">
             <img
-              src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+              src="https://i.pinimg.com/originals/4e/62/f1/4e62f1a470ee99a18c57bea22f9a2bb9.jpg"
               alt=""
               className="featuredImg"
             />
