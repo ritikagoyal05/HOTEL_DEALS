@@ -1,0 +1,66 @@
+
+
+.hotel-properties-container {
+    background-image: url('https://images.pexels.com/photos/16530682/pexels-photo-16530682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    padding: 2rem;
+    color: rgb(4, 40, 123);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .toggle-button {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .feature-name {
+    font-size: 1.2rem;
+  }
+  
+  .marketing-text {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: 1px 1px #333;
+  }
+  .helpline-button{
+    color: black;
+  }
+  .helpline-number{
+    color:black;
+    font-weight: bold;
+
+  }

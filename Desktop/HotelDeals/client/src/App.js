@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -8,6 +9,7 @@ import Hotel from "./pages/hotel/Hotel";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
 import RegistrationForm from "./pages/register/Register";
+import HotelProperties from "./pages/hotel/HotelProperties";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/hotels" element={<List/>}/>
         <Route path="/hotels/:id" element={<Hotel/>}/>
+        <Route path="/hotel-properties" element={<HotelProperties/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<RegistrationForm/>}/>
       </Routes>

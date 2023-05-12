@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom';
 import {
   faCircleArrowLeft,
   faCircleArrowRight,
@@ -128,8 +129,8 @@ const Hotel = () => {
               <div className="hotelDetailsTexts">
                 <h1 className="hotelTitle">{data.title}</h1>
                 <p className="hotelDesc">{data.desc}</p>
-                <button className="additionalFeaturesBtn" onClick={() => console.log("Additional features button clicked")}>
-                  Additional Features
+                <button className="additionalFeaturesBtn">  <Link to="/hotel-properties">Additional Features</Link>
+
                 </button>
               </div>
               <div className="hotelDetailsPrice">
