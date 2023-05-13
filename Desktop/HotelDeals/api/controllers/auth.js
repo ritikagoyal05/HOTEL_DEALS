@@ -81,3 +81,6 @@ export const google = async (req, res, next) => {
 
 
 //fixed error is auth
+
+
+//changed auth
