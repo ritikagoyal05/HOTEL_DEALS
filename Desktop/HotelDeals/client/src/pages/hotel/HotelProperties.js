@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import './HotelProperties.css'; // Import your custom CSS file
+import './HotelProperties.css';
 
 const HotelProperties = () => {
   const [showFeatures, setShowFeatures] = useState(false);
   const [showHelpline, setShowHelpline] = useState(false);
   const [helplineNumber, setHelplineNumber] = useState('');
+  const [comments, setComments] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
-  const handleClick = () => {
+  const handleFeaturesClick = () => {
     setShowFeatures(!showFeatures);
   };
 
@@ -15,12 +17,17 @@ const HotelProperties = () => {
     setHelplineNumber('123-456-7890'); // Replace with the actual helpline number
   };
 
-  const handleCommentsClick = (type) => {
-    const message = type === 'comments' ? 'Please enter your comment:' : 'Please enter your review:';
-    const response = window.prompt(message);
-    if (response) {
-      // do something with the comment or review, such as send it to a server
-      console.log(response);
+  const handleCommentsClick = () => {
+    const comment = window.prompt('Please enter your comment:');
+    if (comment) {
+      setComments([...comments, comment]);
+    }
+  };
+
+  const handleReviewsClick = () => {
+    const review = window.prompt('Please enter your review:');
+    if (review) {
+      setReviews([...reviews, review]);
     }
   };
 
@@ -38,7 +45,7 @@ const HotelProperties = () => {
   return (
     <div className="hotel-properties-container">
       <h1>Hotel Properties</h1>
-      <button className="toggle-button" onClick={handleClick}>
+      <button className="toggle-button" onClick={handleFeaturesClick}>
         {showFeatures ? 'Hide features' : 'Show features'}
       </button>
       {showFeatures && (
@@ -59,12 +66,28 @@ const HotelProperties = () => {
           Helpline Number: {helplineNumber}
         </p>
       )}
-      <button className="comments-button" onClick={() => handleCommentsClick('comments')}>
+      <button className="comments-button" onClick={handleCommentsClick}>
         Comments
       </button>
-      <button className="reviews-button" onClick={() => handleCommentsClick('reviews')}>
+      <button className="reviews-button" onClick={handleReviewsClick}>
         Reviews
       </button>
+      <div className="comments-container">
+        <h2>Comments:</h2>
+        <ul>
+          {comments.map((comment, index) => (
+            <li key={index}>{comment}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="reviews-container">
+        <h2>Reviews:</h2>
+        <ul>
+          {reviews.map((review, index) => (
+            <li key={index}>{review}</li>
+          ))}
+        </ul>
+      </div>
       <p className="marketing-text">
         BOOKINGS ARE AVAILABLE. BOOK YOUR ROOMS AND ENJOY TO THE FULLEST
       </p>
