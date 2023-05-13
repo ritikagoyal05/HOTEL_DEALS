@@ -113,3 +113,10 @@ const RegistrationForm = () => {
 };
 
 export default RegistrationForm;
+
+
+
+
+
+
+// change in the ui of register page
