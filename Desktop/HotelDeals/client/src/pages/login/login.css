@@ -1,33 +1,76 @@
-.login {
+
+.body {
+  background: linear-gradient(to bottom, #0071c2, #0088c2);
+  font-family: 'Open Sans', sans-serif;
+}.login {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
 }
 
 .lContainer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 5px;
 }
 
 .lInput{
-  height: 30px;
-  padding: 10px;
+  height: 52px;
+  width: 280px;
+  padding: 13px;
+  border-radius: 5px;
+  border: none;
 }
 
 .lButton {
   border: none;
-  padding: 10px 20px;
-  background-color: #0071c2;
+  padding: 13px 18px;
+  background-color: #c0550e;
   color: white;
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
+  width:230px;
+  margin:3px
 }
 
 .lButton:disabled{
   background-color: #0071c28c;
   cursor: not-allowed;
 }
+.lButton:hover{
+  background-color: #005ba3;
+}
 
+span {
+  color: rgb(249, 247, 247);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Optional: styling for Google Login button */
+
+.react-oauth__google-btn {
+  background-color: white;
+  color: #757575;
+  border-radius: 5px;
+  border: 5px solid #757575;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.react-oauth__google-btn:hover {
+  background-color: #757575;
+  color: white;
+}

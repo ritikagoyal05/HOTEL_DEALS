@@ -24,6 +24,7 @@ const RegistrationForm = () => {
     maxWidth: "500px",
     margin: "auto",
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+    
   };
 
   const buttonStyle = {
@@ -34,7 +35,7 @@ const RegistrationForm = () => {
     fontSize: "16px",
     width: "100%"
   };
-
+  
   return (
     <div>
       <ToastContainer />
