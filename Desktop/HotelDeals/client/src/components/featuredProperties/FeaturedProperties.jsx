@@ -33,3 +33,7 @@ const FeaturedProperties = () => {
 };
 
 export default FeaturedProperties;
+
+// added a list of properties 
+
+// same 
