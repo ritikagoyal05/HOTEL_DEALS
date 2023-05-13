@@ -5,7 +5,7 @@ const HotelProperties = () => {
   const [showFeatures, setShowFeatures] = useState(false);
   const [showHelpline, setShowHelpline] = useState(false);
   const [helplineNumber, setHelplineNumber] = useState('');
-  
+
   const handleClick = () => {
     setShowFeatures(!showFeatures);
   };
@@ -13,6 +13,15 @@ const HotelProperties = () => {
   const handleHelplineClick = () => {
     setShowHelpline(!showHelpline);
     setHelplineNumber('123-456-7890'); // Replace with the actual helpline number
+  };
+
+  const handleCommentsClick = (type) => {
+    const message = type === 'comments' ? 'Please enter your comment:' : 'Please enter your review:';
+    const response = window.prompt(message);
+    if (response) {
+      // do something with the comment or review, such as send it to a server
+      console.log(response);
+    }
   };
 
   const hotelFeatures = [
@@ -50,6 +59,12 @@ const HotelProperties = () => {
           Helpline Number: {helplineNumber}
         </p>
       )}
+      <button className="comments-button" onClick={() => handleCommentsClick('comments')}>
+        Comments
+      </button>
+      <button className="reviews-button" onClick={() => handleCommentsClick('reviews')}>
+        Reviews
+      </button>
       <p className="marketing-text">
         BOOKINGS ARE AVAILABLE. BOOK YOUR ROOMS AND ENJOY TO THE FULLEST
       </p>

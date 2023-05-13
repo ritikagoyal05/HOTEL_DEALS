@@ -1,7 +1,7 @@
 
 .body {
   background: linear-gradient(to bottom, #0071c2, #0088c2);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
 }.login {
   height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@
   padding: 10px;
   margin: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
 }
 
@@ -50,11 +50,7 @@
   background-color: #005ba3;
 }
 
-span {
-  color: rgb(249, 247, 247);
-  font-weight: bold;
-  text-align: center;
-}
+
 
 /* Optional: styling for Google Login button */
 
