@@ -63,6 +63,7 @@ const Reserve = ({ setOpen, hotelId }) => {
       );
       setOpen(false);
       navigate("/");
+      alert("Hotel Reserved Successfully")
     } catch (err) {}
   };
   return (
