@@ -76,3 +76,11 @@ export const google = async (req, res, next) => {
     next(err)
   }
 };
+
+
+
+
+//fixed error is auth
+
+
+//changed auth
